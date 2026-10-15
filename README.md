@@ -75,7 +75,7 @@ graph TD
         A3[客户端3 PyQt6<br/>操作员: 演示操作员C]
     end
 
-    subgraph "服务器端 (<SERVER_IP>:8001)"
+    subgraph "服务器端 (192.0.2.10:8001)"
         B[API 服务器<br/>FastAPI + Uvicorn]
         C[数据库<br/>SQLite]
         D[操作日志<br/>审计追踪]
@@ -125,7 +125,7 @@ sequenceDiagram
 ```mermaid
 graph LR
     subgraph "统一配置文件"
-        CONFIG[erp_settings.json<br/>server_address: <SERVER_IP>:8001<br/>operator_name: 演示操作员A<br/>default_warning_level: 88]
+        CONFIG[erp_settings.json<br/>server_address: 192.0.2.10:8001<br/>operator_name: 演示操作员A<br/>default_warning_level: 88]
     end
     
     subgraph "客户端所有模块"
@@ -197,7 +197,7 @@ python database/init_db.py
 编辑 `config.ini` 文件：
 ```ini
 [Server]
-host_ip = <SERVER_IP>  # 改为服务器的IP地址
+host_ip = 192.0.2.10  # 文档示例（TEST-NET 网段），请改为你的服务器IP
 port = 8001            # API端口（默认8001）
 operator_name = 演示操作员A    # 改为使用者的姓名
 ```
@@ -388,7 +388,7 @@ ActionLog (操作日志)
 **客户端配置示例**：
 ```ini
 [Server]
-host_ip = <SERVER_IP>  # 服务器IP地址
+host_ip = 192.0.2.10  # 文档示例（TEST-NET 网段），请改为你的服务器IP
 port = 8001            # API端口
 operator_name = 演示操作员A    # 操作者姓名
 
@@ -952,7 +952,7 @@ utils/
    A: 请按以下步骤检查：
    - ✅ 服务器程序是否正在运行（双击"启动服务端.bat"）
    - ✅ 服务器IP地址配置是否正确（erp_settings.json中的server_address）
-   - ✅ 网络连通性测试（cmd中执行：`ping <SERVER_IP>`）
+   - ✅ 网络连通性测试（cmd中执行：`ping 192.0.2.10（示例）`）
    - ✅ 防火墙是否开放 8001 端口
    - ✅ 服务器程序是否报错（查看服务端窗口）
 
@@ -997,7 +997,7 @@ utils/
     A: 发送打包好的 `dist\库存管理系统_simple.exe` 文件，并配置好 `erp_settings.json`：
     ```json
     {
-        "server_address": "<SERVER_IP>:8001",  // 服务器IP
+        "server_address": "192.0.2.10:8001",  // 服务器IP
         "operator_name": "操作员姓名",          // 改为使用者姓名
         "auto_connect": true,
         "default_warning_level": 88
