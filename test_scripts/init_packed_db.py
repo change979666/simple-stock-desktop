@@ -3,11 +3,15 @@ import os
 import sys
 import sqlite3
 
+# 项目根目录与打包目录（按本机实际布局调整；默认基于本脚本所在位置推算）
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+PACKAGED_DIR = os.path.join(PROJECT_ROOT, 'dist', '库存管理系统')
+
 # 切换到打包目录
-os.chdir(r'h:\cursor\ERP开发\simple-stock-desktop\dist\库存管理系统')
+os.chdir(PACKAGED_DIR)
 
 # 添加项目路径
-sys.path.insert(0, r'h:\cursor\ERP开发\simple-stock-desktop')
+sys.path.insert(0, PROJECT_ROOT)
 
 print("开始初始化数据库...")
 print(f"目标路径: {os.getcwd()}")
