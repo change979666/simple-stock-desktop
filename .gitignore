@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# 构建产物
+build/
+dist/
+release/
+
+# 数据库与用户数据
+*.db
+*.sqlite
+backups/
+erp_settings.json
+config/config.ini
+config/*.json
+
+# 日志
+*.log
+logs/
+
+# 系统
+.DS_Store
+Thumbs.db
