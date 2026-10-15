@@ -1,17 +1,19 @@
-# SimpleStock 库存管理系统 v2.0.1
+# SimpleStock 库存管理系统 v2.0.2
 
 > 纯C/S架构的企业级库存管理解决方案
+
+A client/server inventory management desktop app for small businesses, built with PyQt6 and FastAPI, covering products, inventory, sales, shipments, analytics, and auditable operation logs.
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com/)
 [![PyQt6](https://img.shields.io/badge/PyQt6-6.0+-orange.svg)](https://www.riverbankcomputing.com/software/pyqt/)
 [![Architecture](https://img.shields.io/badge/Architecture-Client%2FServer-red.svg)]()
-[![Version](https://img.shields.io/badge/version-2.0.1-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-2.0.2-brightgreen.svg)]()
 [![Status](https://img.shields.io/badge/status-stable-success.svg)]()
 
-## 🎉 最新更新 (v2.0.2 - 2025-10-16)
+## 版本记录：v2.0.2（2025-10-16）
 
-### 🔥 今日重要修复
+### 关键修复
 - 🐛 **修复运输状态崩溃问题**：数据库状态值大小写不匹配导致删除运输记录时程序崩溃
 - 🔧 **修复127.0.0.1请求问题**：统一配置系统，所有请求使用配置的服务器IP，支持网络部署
 - ✨ **统一预警值显示**：仪表盘、库存管理、设置页面预警值完全一致，改用本地配置
@@ -25,7 +27,7 @@
 - 🐛 修复：更新模型定义，修正错误提示
 
 👉 详细变更请查看 [版本历史](#版本历史)  
-👉 今日修复详情请查看 [今日修复总结](今日修复总结_20251016.md)
+👉 v2.0.2 修复详情请查看 [今日修复总结](今日修复总结_20251016.md)
 
 ---
 ## 📋 项目简介
