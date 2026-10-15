@@ -671,8 +671,6 @@ gui/
 ├── main_window.py           # 主窗口
 ├── models.py               # 界面数据模型
 ├── option_settings_dialog.py # 选项设置对话框
-├── product_view_batch_edit.py # 产品批量编辑
-├── product_view_filter.py    # 产品筛选
 ├── product_view.py          # 产品管理视图
 ├── sales_view.py           # 销售管理视图
 ├── settings_view.py        # 设置视图

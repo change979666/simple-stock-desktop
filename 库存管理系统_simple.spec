@@ -46,7 +46,6 @@ a = Analysis(
         'utils.app_mode',             # ⭐ 应用模式管理
         'utils.logging_config',       # ⭐ 日志配置
         'utils.auto_backup',          # 自动备份
-        'utils.backup',               # 备份工具
         'utils.config_loader',        # 配置加载器
         'utils.exception_handlers',   # 异常处理
         'utils.export',               # 导出功能
@@ -84,8 +83,7 @@ a = Analysis(
         'api.routes.inventory',
         'api.routes.products',
         'api.routes.sales',
-        'api.routes.settings',
-        'api.routes.shipments',
+        'api.routes.shipment',
         'api.errors',
         'api.errors.handlers',
         
@@ -100,12 +98,9 @@ a = Analysis(
         'gui.shipment_view',
         'gui.inventory_log_view',
         'gui.settings_view',
-        'gui.backup_view',
         'gui.database_backup_view',
         'gui.option_settings_dialog',
         'gui.system_settings_dialog',
-        'gui.product_view_batch_edit',
-        'gui.product_view_filter',
         'gui.progress_dialog',        # ⭐ v2.1.1 进度对话框
         'gui.sku_sales_stats_view',   # ⭐ v2.1.2 SKU销量统计
         'gui.natural_sort_tree_item', # ⭐ v2.1.2 智能排序
